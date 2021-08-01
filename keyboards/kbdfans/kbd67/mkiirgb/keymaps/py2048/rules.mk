@@ -33,4 +33,9 @@ RGB_MATRIX_ENABLE = no     # Use RGB matrix
 NO_USB_STARTUP_CHECK = no          # Disable initialization only when usb is plugged in
 # COMBO_ENABLE = yes
 
+# Via enable
+# VIA_ENABLE = yes
+
 LAYOUTS = 65_ansi_blocker
+
+include $(HOME)/qmk_firmware/keyboards/kbdfans/kbd67/mkiirgb/keymaps/py2048/qmk-vim/rules.mk

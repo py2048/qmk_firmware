@@ -83,11 +83,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * `-------------------------------------------------------------------------┘   └-------------+------´
   */
 	[_FN1] = LAYOUT_65_ansi_blocker(
-		_______,   KC_F1,        KC_F2,        KC_F3,        KC_F4,        KC_F5,        KC_F6,        KC_F7,        KC_F8,           KC_F9,          KC_F10,          KC_F11,          KC_F12,          LCTL(KC_BSPC),   KC_INS,
-		KC_TAB,    LCTL(KC_Q),   LCTL(KC_W),   LCTL(KC_E),   LCTL(KC_R),   LCTL(KC_T),   LCTL(KC_Y),   LCTL(KC_U),   LCTL(KC_I),      LCTL(KC_O),     LCTL(KC_P),      LCTL(KC_LBRC),   LCTL(KC_RBRC),   LCTL(KC_BSLS),   KC_VOLU,
-		_______,   LCTL(KC_A),   LCTL(KC_S),   LCTL(KC_D),   LCTL(KC_F),   LCTL(KC_G),   KC_LEFT,      KC_DOWN,      KC_UP,           KC_RGHT,        LCTL(KC_SCLN),   LCTL(KC_QUOT),                    LCTL(KC_ENT),    KC_VOLD,
-		KC_RSFT,   LCTL(KC_Z),   LCTL(KC_X),   LCTL(KC_C),   LCTL(KC_V),   LCTL(KC_B),   LCTL(KC_N),   LCTL(KC_M),   LCTL(KC_COMM),   LCTL(KC_DOT),   LCTL(KC_SLSH),   _______,                          KC_HOME,         KC_MUTE,
-		KC_LCTRL,  KC_LGUI,      KC_LALT,                                  KC_SPC,                                                    _______,        MO(_FN3),                         KC_MRWD,         KC_END,          KC_MFFD
+		_______,       KC_F1,        KC_F2,        KC_F3,        KC_F4,        KC_F5,        KC_F6,        KC_F7,        KC_F8,           KC_F9,          KC_F10,          KC_F11,          KC_F12,          LCTL(KC_BSPC),   KC_INS,
+		LCTL(KC_TAB),  LCTL(KC_Q),   LCTL(KC_W),   LCTL(KC_E),   LCTL(KC_R),   LCTL(KC_T),   LCTL(KC_Y),   LCTL(KC_U),   LCTL(KC_I),      LCTL(KC_O),     LCTL(KC_P),      LCTL(KC_LBRC),   LCTL(KC_RBRC),   LCTL(KC_BSLS),   KC_VOLU,
+		_______,       LCTL(KC_A),   LCTL(KC_S),   LCTL(KC_D),   LCTL(KC_F),   LCTL(KC_G),   KC_LEFT,      KC_DOWN,      KC_UP,           KC_RGHT,        LCTL(KC_SCLN),   LCTL(KC_QUOT),                    LCTL(KC_ENT),    KC_VOLD,
+		KC_RSFT,       LCTL(KC_Z),   LCTL(KC_X),   LCTL(KC_C),   LCTL(KC_V),   LCTL(KC_B),   LCTL(KC_N),   LCTL(KC_M),   LCTL(KC_COMM),   LCTL(KC_DOT),   LCTL(KC_SLSH),   _______,                          KC_HOME,         KC_MUTE,
+		KC_LCTRL,      KC_LGUI,      KC_LALT,                                  KC_SPC,                                                    _______,        MO(_FN3),                         KC_HOME,         KC_END,          KC_END
         ),
 
 
@@ -106,11 +106,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   */
 
 	[_FNMAC] = LAYOUT_65_ansi_blocker(
-		_______,   KC_F1,        KC_F2,        KC_F3,        KC_F4,        KC_F5,        KC_F6,        KC_F7,        KC_F8,           KC_F9,          KC_F10,          KC_F11,          KC_F12,          LCMD(KC_BSPC),   KC_INS,
-		KC_TAB,    LCMD(KC_Q),   LCMD(KC_W),   LCMD(KC_E),   LCMD(KC_R),   LCMD(KC_T),   LCMD(KC_Y),   LCMD(KC_U),   LCMD(KC_I),      LCMD(KC_O),     LCMD(KC_P),      LCMD(KC_LBRC),   LCMD(KC_RBRC),   LCMD(KC_BSLS),   KC_VOLU,
-		_______,   LCMD(KC_A),   LCMD(KC_S),   LCMD(KC_D),   LCMD(KC_F),   LCMD(KC_G),   KC_LEFT,      KC_DOWN,      KC_UP,           KC_RGHT,        LCMD(KC_SCLN),   LCMD(KC_QUOT),                    LCMD(KC_ENT),    KC_VOLD,
-		KC_RSFT,   LCMD(KC_Z),   LCMD(KC_X),   LCMD(KC_C),   LCMD(KC_V),   LCMD(KC_B),   LCMD(KC_N),   LCMD(KC_M),   LCMD(KC_COMM),   LCMD(KC_DOT),   LCMD(KC_SLSH),   _______,                          KC_HOME,         KC_MUTE,
-		KC_LCTRL,  KC_LGUI,      KC_LALT,                                  KC_SPC,                                                    _______,        MO(_FN3),                         KC_MRWD,         KC_END,          KC_MFFD
+		_______,       KC_F1,        KC_F2,        KC_F3,        KC_F4,        KC_F5,        KC_F6,        KC_F7,        KC_F8,           KC_F9,          KC_F10,          KC_F11,          KC_F12,          LCMD(KC_BSPC),   KC_INS,
+		LCTL(KC_TAB),  LCMD(KC_Q),   LCMD(KC_W),   LCMD(KC_E),   LCMD(KC_R),   LCMD(KC_T),   LCMD(KC_Y),   LCMD(KC_U),   LCMD(KC_I),      LCMD(KC_O),     LCMD(KC_P),      LCMD(KC_LBRC),   LCMD(KC_RBRC),   LCMD(KC_BSLS),   KC_VOLU,
+		_______,       LCMD(KC_A),   LCMD(KC_S),   LCMD(KC_D),   LCMD(KC_F),   LCMD(KC_G),   KC_LEFT,      KC_DOWN,      KC_UP,           KC_RGHT,        LCMD(KC_SCLN),   LCMD(KC_QUOT),                    LCMD(KC_ENT),    KC_VOLD,
+		KC_RSFT,       LCMD(KC_Z),   LCMD(KC_X),   LCMD(KC_C),   LCMD(KC_V),   LCMD(KC_B),   LCMD(KC_N),   LCMD(KC_M),   LCMD(KC_COMM),   LCMD(KC_DOT),   LCMD(KC_SLSH),   _______,                          KC_HOME,         KC_MUTE,
+		KC_LCTRL,      KC_LGUI,      KC_LALT,                                  KC_SPC,                                                    _______,        MO(_FN3),                         KC_HOME,         KC_END,          KC_END
 		),
 	/* FN 2 layer
   * ,--------------------------------------------------------------------------------------------------.
