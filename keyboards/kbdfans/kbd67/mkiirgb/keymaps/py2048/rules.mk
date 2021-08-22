@@ -38,4 +38,4 @@ NO_USB_STARTUP_CHECK = no          # Disable initialization only when usb is plu
 
 LAYOUTS = 65_ansi_blocker
 
-include $(HOME)/qmk_firmware/keyboards/kbdfans/kbd67/mkiirgb/keymaps/py2048/qmk-vim/rules.mk
+# include $(HOME)/qmk_firmware/keyboards/kbdfans/kbd67/mkiirgb/keymaps/py2048/qmk-vim/rules.mk
