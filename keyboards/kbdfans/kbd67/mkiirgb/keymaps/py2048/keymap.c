@@ -22,6 +22,7 @@ enum layers {
     /* _MAC, */
     _FN1,
     _FNMAC,
+    _FNMAC2,
     _FN2,
     _FN3
 };
@@ -106,11 +107,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   */
 
 	[_FNMAC] = LAYOUT_65_ansi_blocker(
-		_______,       KC_F1,     KC_F2,     KC_F3,     KC_F4,     KC_F5,     KC_F6,     KC_F7,     KC_F8,        KC_F9,       KC_F10,       KC_F11,       KC_F12,       G(KC_BSPC),   KC_INS,
-		LCTL(KC_TAB),  G(KC_Q),   G(KC_W),   G(KC_E),   G(KC_R),   G(KC_T),   G(KC_Y),   G(KC_U),   G(KC_I),      G(KC_O),     G(KC_P),      G(KC_LBRC),   G(KC_RBRC),   G(KC_BSLS),   KC_VOLU,
-		_______,       G(KC_A),   G(KC_S),   G(KC_D),   G(KC_F),   G(KC_G),   KC_LEFT,   KC_DOWN,   KC_UP,        KC_RGHT,     G(KC_SCLN),   G(KC_QUOT),                 G(KC_ENT),    KC_VOLD,
-		KC_RSFT,       G(KC_Z),   G(KC_X),   G(KC_C),   G(KC_V),   G(KC_B),   G(KC_N),   G(KC_M),   G(KC_COMM),   G(KC_DOT),   G(KC_SLSH),   _______,                    G(KC_UP),     KC_MUTE,
-		KC_LCTRL,      KC_LGUI,      KC_LALT,                                  KC_SPC,                            KC_RALT,     MO(_FN3),                   G(KC_RGHT),   G(KC_DOWN),   G(KC_LEFT)
+		_______,       MEH(KC_1),   MEH(KC_2),   MEH(KC_3),   MEH(KC_4),   MEH(KC_5),   MEH(KC_6),   MEH(KC_7),   MEH(KC_8),      MEH(KC_9),     MEH(KC_0),      MEH(KC_MINS),   MEH(KC_EQL),    G(KC_BSPC),     KC_INS,
+		LCTL(KC_TAB),  G(KC_Q),     G(KC_W),     MEH(KC_E),   MEH(KC_R),   G(KC_T),     MEH(KC_Y),   MEH(KC_U),   MEH(KC_I),      MEH(KC_O),     MEH(KC_P),      MEH(KC_LBRC),   MEH(KC_RBRC),   MEH(KC_BSLS),   KC_VOLU,
+		_______,       MEH(KC_A),   MEH(KC_S),   MEH(KC_D),   MEH(KC_F),   MEH(KC_G),   KC_LEFT,     KC_DOWN,     KC_UP,          KC_RGHT,       MEH(KC_SCLN),   MEH(KC_QUOT),                   MEH(KC_ENT),    KC_VOLD,
+		MO(_FNMAC2),   MEH(KC_Z),   MEH(KC_X),   MEH(KC_C),   MEH(KC_V),   MEH(KC_B),   MEH(KC_N),   MEH(KC_M),   MEH(KC_COMM),   MEH(KC_DOT),   MEH(KC_SLSH),   _______,                        G(KC_UP),       KC_MUTE,
+		KC_LCTRL,      KC_LGUI,     KC_LALT,                               LCAG(KC_SPC),                                          KC_RALT,       MO(_FN3),                       G(KC_LEFT),     G(KC_DOWN),     G(KC_RGHT)
+		),
+
+	[_FNMAC2] = LAYOUT_65_ansi_blocker(
+		_______,       HYPR(KC_1),   HYPR(KC_2),   HYPR(KC_3),   HYPR(KC_4),   HYPR(KC_5),   HYPR(KC_6),   HYPR(KC_7),   HYPR(KC_8),      HYPR(KC_9),     HYPR(KC_0),      HYPR(KC_MINS),   HYPR(KC_EQL),    HYPR(KC_BSPC),   KC_INS,
+		LCTL(KC_TAB),  HYPR(KC_Q),   HYPR(KC_W),   HYPR(KC_E),   HYPR(KC_R),   HYPR(KC_T),   HYPR(KC_Y),   HYPR(KC_U),   HYPR(KC_I),      HYPR(KC_O),     HYPR(KC_P),      HYPR(KC_LBRC),   HYPR(KC_RBRC),   HYPR(KC_BSLS),   KC_VOLU,
+		_______,       HYPR(KC_A),   HYPR(KC_S),   HYPR(KC_D),   HYPR(KC_F),   HYPR(KC_G),   HYPR(KC_H),   HYPR(KC_J),   HYPR(KC_K),      HYPR(KC_L),     HYPR(KC_SCLN),   HYPR(KC_QUOT),                    HYPR(KC_ENT),    KC_VOLD,
+		MO(_FNMAC2),   HYPR(KC_Z),   HYPR(KC_X),   HYPR(KC_C),   HYPR(KC_V),   HYPR(KC_B),   HYPR(KC_N),   HYPR(KC_M),   HYPR(KC_COMM),   HYPR(KC_DOT),   HYPR(KC_SLSH),   _______,                          HYPR(KC_UP),     KC_MUTE,
+		KC_LCTRL,      KC_LGUI,      KC_LALT,                                  HYPR(KC_SPC),                                              KC_RALT,        MO(_FN3),                         HYPR(KC_LEFT),   HYPR(KC_DOWN),   HYPR(KC_RGHT)
 		),
 	/* FN 2 layer
   * ,--------------------------------------------------------------------------------------------------.
