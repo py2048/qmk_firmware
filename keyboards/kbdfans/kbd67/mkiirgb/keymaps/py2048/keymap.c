@@ -17,10 +17,9 @@
 
 // layers, ordering is important!
 enum layers {
-    _MAC,
-    _BASE,
-    /* _MAC, */
-    _FN1,
+    _BASE = 1,
+    _MAC = 0,
+    _FN1 = 2,
     _FNMAC,
     _FNMAC2,
     _FN2,
