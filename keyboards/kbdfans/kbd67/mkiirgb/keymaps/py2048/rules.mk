@@ -14,7 +14,7 @@ BOOTLOADER = atmel-dfu
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = lite     # Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = yes     # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
@@ -32,6 +32,7 @@ RGBLIGHT_ENABLE = no
 RGB_MATRIX_ENABLE = no     # Use RGB matrix
 NO_USB_STARTUP_CHECK = no          # Disable initialization only when usb is plugged in
 # COMBO_ENABLE = yes
+DYNAMIC_MACRO_ENABLE = yes    # Macro
 
 # Via enable
 # VIA_ENABLE = yes
