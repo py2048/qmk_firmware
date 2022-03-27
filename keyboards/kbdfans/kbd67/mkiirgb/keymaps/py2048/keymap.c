@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   */
 	[_FN1] = LAYOUT_65_ansi_blocker(
 		_______,       MEH(KC_1),   MEH(KC_2),   MEH(KC_3),   MEH(KC_4),   MEH(KC_5),   MEH(KC_6),   MEH(KC_7),   MEH(KC_8),      MEH(KC_9),     MEH(KC_0),      MEH(KC_MINS),   MEH(KC_EQL),    G(KC_BSPC),     KC_INS,
-		LCTL(KC_TAB),  G(KC_Q),     C(KC_W),     MEH(KC_E),   MEH(KC_R),   G(KC_T),     MEH(KC_Y),   MEH(KC_U),   MEH(KC_I),      MEH(KC_O),     MEH(KC_P),      MEH(KC_LBRC),   MEH(KC_RBRC),   MEH(KC_BSLS),   KC_HOME,
+		LCTL(KC_TAB),  G(KC_Q),     C(KC_W),     MEH(KC_E),   MEH(KC_R),   C(KC_T),     MEH(KC_Y),   MEH(KC_U),   MEH(KC_I),      MEH(KC_O),     MEH(KC_P),      MEH(KC_LBRC),   MEH(KC_RBRC),   MEH(KC_BSLS),   KC_HOME,
 		_______,       MEH(KC_A),   MEH(KC_S),   MEH(KC_D),   MEH(KC_F),   MEH(KC_G),   KC_LEFT,     KC_DOWN,     KC_UP,          KC_RGHT,       MEH(KC_SCLN),   MEH(KC_QUOT),                   MEH(KC_ENT),    KC_END,
 		MO(_FNHYPR),   MEH(KC_Z),   MEH(KC_X),   C(KC_INS),   S(KC_INS),   MEH(KC_B),   MEH(KC_N),   MEH(KC_M),   MEH(KC_COMM),   MEH(KC_DOT),   MEH(KC_SLSH),   MEH(KC_RSFT),                   G(KC_UP),       KC_MUTE,
 		KC_LCTRL,      KC_LGUI,     KC_LALT,                               G(KC_SPC),                                             KC_RALT,       MO(_FN3),                       G(KC_LEFT),     G(KC_DOWN),     G(KC_RGHT)
@@ -118,7 +118,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[_FNMAC] = LAYOUT_65_ansi_blocker(
 		_______,       MEH(KC_1),   MEH(KC_2),   MEH(KC_3),   MEH(KC_4),   MEH(KC_5),   MEH(KC_6),   MEH(KC_7),   MEH(KC_8),      MEH(KC_9),     MEH(KC_0),      MEH(KC_MINS),   MEH(KC_EQL),    G(KC_BSPC),     KC_INS,
-		LCTL(KC_TAB),  G(KC_Q),     G(KC_W),     MEH(KC_E),   MEH(KC_R),   G(KC_T),     MEH(KC_Y),   MEH(KC_U),   MEH(KC_I),      MEH(KC_O),     MEH(KC_P),      MEH(KC_LBRC),   MEH(KC_RBRC),   MEH(KC_BSLS),   KC_VOLU,
+		LCTL(KC_TAB),  G(KC_Q),     C(KC_W),     MEH(KC_E),   MEH(KC_R),   G(KC_T),     MEH(KC_Y),   MEH(KC_U),   MEH(KC_I),      MEH(KC_O),     MEH(KC_P),      MEH(KC_LBRC),   MEH(KC_RBRC),   MEH(KC_BSLS),   KC_VOLU,
 		_______,       MEH(KC_A),   MEH(KC_S),   MEH(KC_D),   MEH(KC_F),   MEH(KC_G),   KC_LEFT,     KC_DOWN,     KC_UP,          KC_RGHT,       MEH(KC_SCLN),   MEH(KC_QUOT),                   MEH(KC_ENT),    KC_VOLD,
 		MO(_FNHYPR),   MEH(KC_Z),   MEH(KC_X),   MEH(KC_C),   C(S(KC_V)),  MEH(KC_B),   MEH(KC_N),   MEH(KC_M),   MEH(KC_COMM),   MEH(KC_DOT),   MEH(KC_SLSH),   MEH(KC_F12),                    G(KC_UP),       KC_MUTE,
 		KC_LCTRL,      KC_LGUI,     KC_LALT,                               G(KC_SPC),                                             KC_RALT,       MO(_FN3),                       G(KC_LEFT),     G(KC_DOWN),     G(KC_RGHT)
