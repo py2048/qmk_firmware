@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * `-------------------------------------------------------------------------┘   └-------------+------´
   */
 	[_FN1] = LAYOUT_65_ansi_blocker(
-		KC_CAPS,       MEH(KC_1),   MEH(KC_2),   MEH(KC_3),   MEH(KC_4),   MEH(KC_5),   MEH(KC_6),   MEH(KC_7),   MEH(KC_8),      MEH(KC_9),     MEH(KC_0),      MEH(KC_MINS),   MEH(KC_EQL),    DEL_LINE,       KC_INS,
+		KC_CAPS,       MEH(KC_1),   MEH(KC_2),   MEH(KC_3),   MEH(KC_4),   MEH(KC_5),   MEH(KC_6),   MEH(KC_7),   MEH(KC_8),      MEH(KC_9),     MEH(KC_0),      C(KC_MINS),     C(KC_EQL),      DEL_LINE,       KC_INS,
 		LCTL(KC_TAB),  G(KC_Q),     C(KC_W),     MEH(KC_E),   MEH(KC_R),   C(KC_T),     MEH(KC_Y),   MEH(KC_U),   MEH(KC_I),      MEH(KC_O),     MEH(KC_P),      C(S(KC_TAB)),   C(KC_TAB),      MEH(KC_BSLS),   KC_HOME,
 		_______,       MEH(KC_A),   MEH(KC_S),   MEH(KC_D),   MEH(KC_F),   MEH(KC_G),   KC_LEFT,     KC_DOWN,     KC_UP,          KC_RGHT,       MEH(KC_SCLN),   MEH(KC_QUOT),                   MEH(KC_ENT),    KC_END,
 		MO(_FNHYPR),   MEH(KC_Z),   MEH(KC_X),   C(KC_INS),   S(KC_INS),   MEH(KC_B),   MEH(KC_N),   MEH(KC_M),   MEH(KC_COMM),   MEH(KC_DOT),   MEH(KC_SLSH),   MEH(KC_RSFT),                   KC_VOLU,        KC_MUTE,
@@ -117,10 +117,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   */
 	[_FN2] = LAYOUT_65_ansi_blocker(
 		KC_ESC,    KC_F1,     KC_F2,     KC_F3,     KC_F4,      KC_F5,    KC_F6,     KC_F7,     KC_F8,     KC_F9,     KC_F10,    KC_F11,    KC_F12,     _______,    EEP_RST,
-		_______,   DF(_BASE), DF(_MAC),  DF(_GAME), _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,    _______,    KC_VOLU,
+		_______,   DF(_BASE), DF(_GAME), _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,    _______,    KC_VOLU,
 		MO(_FN3),  DM_RSTP,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,               _______,    KC_VOLD,
 		_______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,               C(KC_UP),   KC_MUTE,
-		_______,   _______,   KC_LALT,                         RGB_TOG,                                    MO(_FN3),  _______,             C(KC_LEFT), C(KC_DOWN), C(KC_RGHT)
+		_______,   _______,   KC_LALT,                         RGB_TOG,                                    MO(_FN3),  _______,              MEH(KC_U),  C(KC_DOWN), MEH(KC_I)
     ),
 
   /* FN 3 layer
